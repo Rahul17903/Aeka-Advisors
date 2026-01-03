@@ -213,7 +213,7 @@ These limitations are inherent to keyword-based retrieval systems and are not im
 ## Author
 
 **Rahul Ghosh**  
-B.Tech CSE (Data Science)  
+B.Tech CSE (Data Science) 
 Node.js Developer / Full Stack Developer
 
 * GitHub: [https://github.com/Rahul17903](https://github.com/Rahul17903)

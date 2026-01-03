@@ -1,24 +1,25 @@
-# 📝 Smart ToDo API
+#  Smart ToDo API
 
-A secure and scalable RESTful backend API for task management built using **Node.js, Express, and MongoDB**.  
+A RESTful Todo API built using **Node.js, Express, and MongoDB**.
+This API provides authentication and CRUD operations for managing todo tasks securely.  
 This project supports **JWT-based authentication** and **user-specific task CRUD operations**.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- User Registration & Login (JWT Authentication)
+- User Authentication(JWT Based)
 - Access Token & Refresh Token
-- User-specific task management
 - Create, Read, Update & Delete tasks
 - Protected routes with authentication middleware
 - Centralized error handling
-- Input validation
+- Using MongoDB for DataBase
+- Environment-based Configuration
 - Rate limiting & CORS enabled
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - Node.js
 - Express.js
@@ -33,7 +34,7 @@ This project supports **JWT-based authentication** and **user-specific task CRUD
 ---
 
 ## 📁 Project Structure
-
+```
 Smart-ToDo-API/
 │
 ├── config/
@@ -60,6 +61,7 @@ Smart-ToDo-API/
 ├── server.js
 └── package.json
 
+```
 ---
 
 ## ⚙️ Environment Variables
@@ -74,7 +76,7 @@ Create a `.env` file in the root directory:
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 # Clone the repository
 git clone https://github.com/Rahul17903/Aeka-Advisors.git
@@ -90,7 +92,7 @@ npm run start
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 # 🔐 Authentication
 | Method | Endpoint             | Description          |
@@ -99,7 +101,7 @@ npm run start
 | POST   | `/api/auth/login`    | Login user           |
 | POST   | `/api/auth/refresh`  | Refresh access token |
 
-# 📝 Tasks (Protected Routes)
+#  Tasks (Protected Routes)
 | Method | Endpoint         | Description   |
 | ------ | ---------------- | ------------- |
 | POST   | `/api/tasks`     | Create a task |
@@ -107,7 +109,7 @@ npm run start
 | PUT    | `/api/tasks/:id` | Update a task |
 | DELETE | `/api/tasks/:id` | Delete a task |
 
-# 📌 Authorization Header Required
+#  Authorization Header Required
 Authorization: Bearer <access_token>
 
 ---
@@ -123,7 +125,7 @@ All endpoints were tested using Postman.
 
 ---
 
-## 🛡 Security Practices
+##  Security Practices
 
 - Password hashing using bcrypt
 - JWT-based authentication
@@ -135,22 +137,22 @@ All endpoints were tested using Postman.
 
 ---
 
-## 🧠 Project Summary
+##  Project Summary
 
 This project demonstrates a real-world backend REST API with authentication, authorization, and database integration using Node.js and MongoDB.
 
 ---
 
-## 📦 Postman Collection
+## Postman Collection
 
 A Postman collection is included in this repository to test all API endpoints.
 Import the collection into Postman and run the requests.
 
 ---
 
-## 👨‍💻 Author
+## 👨 Author
 
-Rahul Ghosh
+**Rahul Ghosh**  
 NodeJs Developer / Full-Stack Developer
 
 * GitHub: [https://github.com/Rahul17903](https://github.com/Rahul17903)
