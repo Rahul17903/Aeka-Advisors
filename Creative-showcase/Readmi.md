@@ -86,7 +86,6 @@ Creative-showcase/
 │   └── package.json
 │
 └── README.md
-
 ```
 ---
 
@@ -96,7 +95,7 @@ Creative-showcase/
 ```
 VITE_API_URL=http://localhost:5000
 ```
-### Server (server/env.local)
+### Server (server/.env)
 ```
 # Server
 PORT=5000
@@ -110,16 +109,14 @@ CLOUDINARY_API_SECRET=CLOUDINARY_API_SECRET
 
 # Client
 REACT_APP_API_URL=http://localhost:5173
-
 ```
 ---
 
 ## Getting Started (Local Setup)
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/creative-showcase.git
+git clone https://github.com/Rahul17903/Aeka-Advisors.git
 cd creative-showcase
-
 ```
 ### 2️⃣ Install Dependencies
 **Frontend**
@@ -143,7 +140,7 @@ cd client
 npm run dev
 ```
 Frontend runs on:
-👉 http://localhost:5173
+👉 http://localhost:5173  
 Backend runs on:
 👉 http://localhost:5000
 
@@ -159,7 +156,7 @@ Backend runs on:
 ---
 
 ## 👨‍💻 About the Developer
-**Rahul Ghosh**
+**Rahul Ghosh**  
 MERN Stack Developer/ Node.Js Developer
 
 * GitHub: [https://github.com/Rahul17903](https://github.com/Rahul17903)
