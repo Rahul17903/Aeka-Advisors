@@ -72,8 +72,6 @@ A Python-based ranking system that recommends weekend travel destinations based 
 
 🔗 Details inside.
 
----
-
 
 ---
 
