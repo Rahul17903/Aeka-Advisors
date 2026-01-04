@@ -74,22 +74,25 @@ A Python-based ranking system that recommends weekend travel destinations based 
 
 ---
 
-### 3️⃣ Weekend Getaway Ranker (Data Engineering)
-📁 Folder: `Weekend Getaway Ranker/`
+
+---
+
+### 4️⃣ Spotify Lyric Search 
+📁 Folder: `spotify-lyric-search/`
 
 **Description:**  
-A Python-based ranking system that recommends weekend travel destinations based on distance, rating, and popularity.
+A text-identification model that predicts song title and artist from a snippet of lyrics.
 
 **Tech Stack:**
 - Python
-- Pandas
+- NLP preprocessing
+- Machine Learning (Similarity / Classification)
 
 **Highlights:**
-- Data preprocessing
-- Ranking algorithm
-- Sample outputs for multiple cities
+- Tokenization & stop-word removal
+- Lyrics similarity matching
+- Model evaluation
 
-🔗 Details inside.
-
+🔗 Full explanation inside.
 
 
