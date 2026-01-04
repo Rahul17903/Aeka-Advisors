@@ -6,6 +6,13 @@ A full-stack Creative Showcase Platform where artists can upload, manage, and sh
 Built with modern MERN stack best practices, clean architecture, and production-ready features.
 
 ---
+## 🚀 Live Demo
+
+![Vercel](https://vercelbadge.vercel.app/api/Rahul17903/Aeka-Advisors)
+
+🌐 **Frontend:** https://aeka-advisors.vercel.app/  
+⚙️ **Backend API:** https://aeka-advisors.onrender.com
+
 
 ## 🚀 Live Features
 
@@ -117,7 +124,8 @@ REACT_APP_API_URL=http://localhost:5173
 ## Getting Started (Local Setup)
 ### 1️⃣ Clone the Repository
 ```
-git clone https://github.com/your-username/creative-showcase.git
+git clone https://github.com/Rahul17903/Aeka-Advisors.git
+cd Aeka-Advisors
 cd creative-showcase
 
 ```
