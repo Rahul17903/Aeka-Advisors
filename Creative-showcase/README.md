@@ -135,7 +135,7 @@ cd creative-showcase
 cd client
 npm install
 ```
-** Backend **
+**Backend**
 ``` 
 cd server
 npm install

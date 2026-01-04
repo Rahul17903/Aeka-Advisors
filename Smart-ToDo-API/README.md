@@ -78,30 +78,30 @@ Create a `.env` file in the root directory:
 
 ##  Installation & Setup
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/Rahul17903/Aeka-Advisors.git
 
-# Navigate to project folder
+### Navigate to project folder
 cd Aeka-Advisors/smart-todo-api
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Start the server
+### Start the server
 npm run start
 
 ---
 
 ##  API Endpoints
 
-# 🔐 Authentication
+### 🔐 Authentication
 | Method | Endpoint             | Description          |
 | ------ | -------------------- | -------------------- |
 | POST   | `/api/auth/register` | Register a new user  |
 | POST   | `/api/auth/login`    | Login user           |
 | POST   | `/api/auth/refresh`  | Refresh access token |
 
-#  Tasks (Protected Routes)
+###  Tasks (Protected Routes)
 | Method | Endpoint         | Description   |
 | ------ | ---------------- | ------------- |
 | POST   | `/api/tasks`     | Create a task |
@@ -109,7 +109,7 @@ npm run start
 | PUT    | `/api/tasks/:id` | Update a task |
 | DELETE | `/api/tasks/:id` | Delete a task |
 
-#  Authorization Header Required
+###  Authorization Header Required
 Authorization: Bearer <access_token>
 
 ---
@@ -117,7 +117,7 @@ Authorization: Bearer <access_token>
 ## 🧪 API Testing
 All endpoints were tested using Postman.
 
-# Testing Flow:
+### Testing Flow:
 1. Register user
 2. Login and receive JWT tokens
 3. Access protected task routes
@@ -125,7 +125,7 @@ All endpoints were tested using Postman.
 
 ---
 
-##  Security Practices
+###  Security Practices
 
 - Password hashing using bcrypt
 - JWT-based authentication
