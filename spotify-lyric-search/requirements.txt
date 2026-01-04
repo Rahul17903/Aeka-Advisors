@@ -1,7 +1,0 @@
-pandas
-numpy
-scikit-learn
-nltk
-sentence-transformers
-torch
-rank_bm25
