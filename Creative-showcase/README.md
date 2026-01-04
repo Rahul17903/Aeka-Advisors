@@ -1,159 +1,167 @@
-#  Smart ToDo API
+# 🎨 Creative Showcase — MERN Stack Application
 
-A RESTful Todo API built using **Node.js, Express, and MongoDB**.
-This API provides authentication and CRUD operations for managing todo tasks securely.  
-This project supports **JWT-based authentication** and **user-specific task CRUD operations**.
+## Project Overview
 
----
-
-##  Features
-
-- User Authentication(JWT Based)
-- Access Token & Refresh Token
-- Create, Read, Update & Delete tasks
-- Protected routes with authentication middleware
-- Centralized error handling
-- Using MongoDB for DataBase
-- Environment-based Configuration
-- Rate limiting & CORS enabled
+A full-stack Creative Showcase Platform where artists can upload, manage, and showcase their digital artwork, discover other creators, and build an online portfolio.
+Built with modern MERN stack best practices, clean architecture, and production-ready features.
 
 ---
 
-##  Tech Stack
+## 🚀 Live Features
 
-- Node.js
-- Express.js
-- MongoDB (NoSQL)
-- Mongoose
-- JWT (Authentication)
-- bcrypt
-- express-validator
-- CORS
+### 👤 Authentication & Users
+* Secure user authentication (JWT + HTTP-only cookies)
+* User profiles (private dashboard & public profile)
+* Protected routes for authenticated users
 
+### 🖼 Artwork Management
+* Upload artwork with image and metadata
+* Edit & delete artworks
+* View counts, likes, and engagement tracking
+* Featured artworks on landing page
+
+### 🔍 Discovery & Browsing
+* Browse artworks by category
+* Featured & trending artworks
+* Sorting (newest, popular, most liked)
+* Responsive artwork grid & list views
+
+### 📊 Dashboard Analytics
+* Total uploads
+* Total views
+* Total likes
+* Engagement rate calculation
+
+### 🎨 UI & UX
+* Fully responsive design
+* Tailwind CSS styling
+* Modern landing page & dashboard UI
+* Reusable components & clean layouts
+
+---
+
+## 🛠 Tech Stack
+ 
+### Frontend (Client)
+* React (Vite)
+* Tailwind CSS
+* React Router
+* Context API
+* Axios
+* Heroicons
+
+### Backend (Server)
+* Node.js
+* Express.js
+* MongoDB + Mongoose
+* JWT Authentication
+* CLOUDINARY
+* CORS & Security Middleware
 
 ---
 
 ## 📁 Project Structure
 ```
-Smart-ToDo-API/
+Creative-showcase/
 │
-├── config/
-│ └── db.js
+├── client/                     # Frontend (Vite + React)
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── contexts/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   └── main.jsx
+│   ├── .env
+│   ├── vite.config.js
+│   └── package.json
 │
-├── controllers/
-│ ├── auth.controller.js
-│ └── task.controller.js
+├── server/                     # Backend (Node + Express)
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── env.local
+│   ├── server.js
+│   └── package.json
 │
-├── middleware/
-│ ├── auth.middleware.js
-│ ├── error.middleware.js
-│ └── validate.middleware.js
-│
-├── models/
-│ ├── User.model.js
-│ └── Task.model.js
-│
-├── routes/
-│ ├── auth.routes.js
-│ └── task.routes.js
-│
-├── .env
-├── server.js
-└── package.json
+└── README.md
 
 ```
 ---
 
 ## ⚙️ Environment Variables
+### Client (client/.env)
 
-Create a `.env` file in the root directory:
+```
+VITE_API_URL=http://localhost:5000
+```
+### Server (server/env.local)
+```
+# Server
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/creative-showcase
+JWT_SECRET=rahul
 
-- PORT=5000
-- MONGO_URI=your_mongodb_connection_string
-- JWT_SECRET=your_access_token_secret
-- JWT_REFRESH_SECRET=your_refresh_token_secret
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=CLOUDINARY_CLOUD_NAME
+CLOUDINARY_API_KEY=CLOUDINARY_API_KEY
+CLOUDINARY_API_SECRET=CLOUDINARY_API_SECRET
 
+# Client
+REACT_APP_API_URL=http://localhost:5173
 
+```
 ---
 
-##  Installation & Setup
+## Getting Started (Local Setup)
+### 1️⃣ Clone the Repository
+```
+git clone https://github.com/your-username/creative-showcase.git
+cd creative-showcase
 
-# Clone the repository
-git clone https://github.com/Rahul17903/Aeka-Advisors.git
-
-# Navigate to project folder
-cd smart-todo-api
-
-# Install dependencies
+```
+### 2️⃣ Install Dependencies
+**Frontend**
+```
+cd client
 npm install
-
-# Start the server
-npm run start
-
----
-
-##  API Endpoints
-
-# 🔐 Authentication
-| Method | Endpoint             | Description          |
-| ------ | -------------------- | -------------------- |
-| POST   | `/api/auth/register` | Register a new user  |
-| POST   | `/api/auth/login`    | Login user           |
-| POST   | `/api/auth/refresh`  | Refresh access token |
-
-#  Tasks (Protected Routes)
-| Method | Endpoint         | Description   |
-| ------ | ---------------- | ------------- |
-| POST   | `/api/tasks`     | Create a task |
-| GET    | `/api/tasks`     | Get all tasks |
-| PUT    | `/api/tasks/:id` | Update a task |
-| DELETE | `/api/tasks/:id` | Delete a task |
-
-#  Authorization Header Required
-Authorization: Bearer <access_token>
+```
+** Backend **
+``` 
+cd server
+npm install
+```
+### 3️⃣ Run the Application
+**Start Backend**
+``` 
+cd server
+npm run dev
+```
+**Start Frontend**
+```
+cd client
+npm run dev
+```
+Frontend runs on:
+👉 http://localhost:5173
+Backend runs on:
+👉 http://localhost:5000
 
 ---
 
-## 🧪 API Testing
-All endpoints were tested using Postman.
-
-# Testing Flow:
-1. Register user
-2. Login and receive JWT tokens
-3. Access protected task routes
-4. Perform CRUD operations on tasks
+## 🔐 API Architecture (Highlights)
+* RESTful API structure
+* Centralized error handling
+* MVC pattern (Models, Routes, Middleware)
+* Secure cookies & CORS configuration
+* Clean separation of concerns
 
 ---
 
-##  Security Practices
-
-- Password hashing using bcrypt
-- JWT-based authentication
-- Refresh token implementation
-- Input validation using middleware
-- Rate limiting to prevent abuse
-- Centralized error handling
-- Environment variable protection
-
----
-
-##  Project Summary
-
-This project demonstrates a real-world backend REST API with authentication, authorization, and database integration using Node.js and MongoDB.
-
----
-
-## Postman Collection
-
-A Postman collection is included in this repository to test all API endpoints.
-Import the collection into Postman and run the requests.
-
----
-
-## 👨 Author
-
+## 👨‍💻 About the Developer
 **Rahul Ghosh**  
-NodeJs Developer / Full-Stack Developer
+MERN Stack Developer/ Node.Js Developer
 
 * GitHub: [https://github.com/Rahul17903](https://github.com/Rahul17903)
 * Portfolio: [https://rahulghosh.me](https://rahulghosh.me)

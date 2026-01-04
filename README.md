@@ -1,4 +1,4 @@
-# 📚 College Placement Assignments – Full Stack & Data Projects
+# 📚 Aeka Advisors – Intern Technical Assessment
 
 This repository contains **multiple technical assignments** completed.
 Each folder represents a **separate assignment** with its **own README.md**, setup instructions, and implementation details.
@@ -14,7 +14,7 @@ Each folder represents a **separate assignment** with its **own README.md**, set
 
 ---
 
-## 📂 Assignments Overview
+## 📌 Assignments Overview
 
 ### 1️⃣ Creative Showcase (Full Stack MERN Application)
 📁 Folder: `Creative-showcase/`
@@ -28,6 +28,7 @@ A full-stack platform where artists can upload, manage, and showcase digital art
 - MongoDB, Mongoose
 - JWT Authentication
 - Cloudinary
+- 🌐 Live Demo: https://aeka-advisors.vercel.app/
 
 🔗 See detailed setup & features inside.
 
