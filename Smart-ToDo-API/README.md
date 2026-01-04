@@ -82,7 +82,7 @@ Create a `.env` file in the root directory:
 git clone https://github.com/Rahul17903/Aeka-Advisors.git
 
 # Navigate to project folder
-cd smart-todo-api
+cd Aeka-Advisors/smart-todo-api
 
 # Install dependencies
 npm install
